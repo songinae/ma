@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body{margin:0px;padding:0px;}
+		.a{height: 500px; width: 1500px; margin:auto;position: relative;}
+		.text{width: 500px;position: absolute;left: 500px; bottom: 100px;}
+		.img{height: 750px;width: 1500px; position: fixed;}
+		.imga{width: 200px; position: fixed; animation: ro 3s infinite linear;}
+		.png{height: 500px;width: 1000px;margin:auto;position: absolute;left: 250px; opacity: 1; }
+
+		@keyframes ro{
+			from{}
+			to{ transform: rotate3D(0,1,0,360deg);}
+
+		@keyframes pn{
+			from{} to{opacity: 0.5;}
+		}
+
+
+	</style>
+</head>
+<body>
+	<section class="a">
+		<img src="00.png" class="img">
+		<img src="01.png" class="imga" style="position: fixed;left: 30px; top: 30px">
+		<img src="02.png" class="imga" style="position: fixed;left: 30px; top: 250px ;animation-delay: 0.5s">
+		<img src="03.png" class="imga" style="position: fixed;left: 30px; top: 480px;animation-delay: 1s">
+		<img src="04.png" class="imga" style="position: fixed;right: 30px; top: 30px">
+		<img src="05.png" class="imga" style="position: fixed;right: 30px; top: 250px;animation-delay: 0.5s">
+		<img src="06.png" class="imga" style="position: fixed;right: 30px; top: 480px;animation-delay: 1s">
+		<p class="text">
+			콩쥐는 아버지가 돌아가신 후 매일 새엄마의 구박과 팥쥐의 괴롭힘에 시달립니다. 마을잔치날, 새엄마는 고운 옷을 팥쥐에게 입히고 콩쥐에게 말합니다. "감나무 밑의 항아리에 물을 가득 채우고 가마솥 옆에 있는 곡식을 모두 빻고 잔치에 오거라."
+		</p>
+		</section>
+	
+	<section class="a">
+		<img src="07.png" class="png" id="p1">
+		<p class="text">
+			콩쥐는 물을 긷고
+		</p>
+	</section>
+
+	<section class="a">
+		<img src="08.png" class="png" id="p1">
+		<p class="text">
+			콩쥐는 물을 긷고
+		</p>
+	</section>
+
+	<section class="a">
+		<img src="09.png" class="png" id="p1">
+		<p class="text">
+			콩쥐는 물을 긷고
+		</p>
+	</section>
+
+	<section class="a">
+		<img src="10.png" class="png" id="p1">
+		<p class="text">
+			콩쥐는 물을 긷고
+		</p>
+	</section>
+
+	<section class="a">
+		<img src="11.png" class="png" id="p1">
+		<p class="text">
+			콩쥐는 물을 긷고
+		</p>
+	</section>
+
+	<section class="a">
+		<img src="12.png" class="png" id="p1">
+		<p class="text">
+			콩쥐는 물을 긷고
+		</p>
+	</section>
+
+	<section class="a">
+		<img src="13.png" class="png" id="p1">
+		<img src="14.png" class="png" id="p1">
+		<p class="text">
+			콩쥐는 물을 긷고
+		</p>
+	</section>
+
+	<section class="a">
+		<img src="15.png" class="png" id="p1">
+		<img src="16.png" class="png" id="p1">
+		<img src="17.png" class="png" id="p1">
+		<p class="text">
+			콩쥐는 물을 긷고
+		</p>
+	</section>
+
+	<div id="monitor"></div>
+	<style type="text/css">
+		#monitor {width: 80px; height: 30px; background-color: black; color: white; position: fixed;top:0;left: 0;}
+	</style>
+<script type="text/javascript">
+		window.onscroll = function() {
+		var t = document.documentElement.scrollTop + document.body.scrollTop; monitor.innerHTML = t;
+		if (t>300) {p1.style.animation = "pn 1s forwards";}
+		else{p1.style.animation = "0"}
+		}
+</script>
+</body>
+
+
+</html>
